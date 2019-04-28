@@ -12,21 +12,29 @@
 	"license": "MIT",
 	"keywords": [
 		"code",
+		"code-locality",
 		"codes",
 		"country",
+		"i18n",
 		"iso",
+		"iso639",
+		"iso639-1",
+		"iso639-2",
+		"json",
 		"lang",
 		"language",
 		"languages",
+		"lcid",
 		"locale",
 		"locales",
 		"localization",
 		"module",
-		"tag"
+		"tag",
+		"windows"
 	],
 	"scripts": {
 		"start": "node index.js",
-		"test": "echo \"Nice Test :)\""
+		"test": "node test.js"
 	},
 	"engines": {
 		"node": ">=8"
