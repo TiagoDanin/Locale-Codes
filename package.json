@@ -2,7 +2,7 @@
 	"name": "locale-codes",
 	"main": "index.js",
 	"preferGlobal": false,
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": " Language codes & country codes",
 	"author": {
 		"name": "Tiago Danin",
