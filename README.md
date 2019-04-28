@@ -41,7 +41,7 @@ Get information
 - `iso639-2` - ISO 639-2 id (String)
 - `iso639-1` - ISO 639-1 id (String || Null)
 
-#### Shout
+#### Shortcuts
 - `getByName(text)` = `where('name', text)`
 - `getByLocation`(text) = `where('location', text)`
 - `getByTag(text)` = `where('tag', text)`
@@ -872,6 +872,17 @@ Zarma | null | dje | 4096 | null | null |
 Zarma | Niger | dje-NE | 4096 | null | null |
 Zulu | null | zu | 53 | zul | zu |
 Zulu | South Africa | zu-ZA | 1077 | zul | zu |
+
+## Tests
+
+To run the test suite, first install the dependencies, then run `test`:
+
+```sh
+# NPM
+npm test
+# Or Using Yarn
+yarn test
+```
 
 ## Dependencies
 

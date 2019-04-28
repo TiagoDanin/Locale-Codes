@@ -13,7 +13,7 @@ Get information
 - `iso639-2` - ISO 639-2 id (String)
 - `iso639-1` - ISO 639-1 id (String || Null)
 
-#### Shout
+#### Shortcuts
 - `getByName(text)` = `where('name', text)`
 - `getByLocation`(text) = `where('location', text)`
 - `getByTag(text)` = `where('tag', text)`
