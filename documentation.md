@@ -1,31 +1,3 @@
-# Locale Codes
-
-[![Node](https://img.shields.io/node/v/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Version](https://img.shields.io/npm/v/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Downloads](https://img.shields.io/npm/dt/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Travis](https://img.shields.io/travis/TiagoDanin/Locale-Codes.svg?branch=master&style=flat-square)](https://travis-ci.org/TiagoDanin/Locale-Codes) 
-
- Language codes & country codes
-
-## Installation
-
-Module available through the [npm registry](https://www.npmjs.com/). It can be installed using the  [`npm`](https://docs.npmjs.com/getting-started/installing-npm-packages-locally) or [`yarn`](https://yarnpkg.com/en/) command line tools.
-
-```sh
-# NPM
-npm install locale-codes --save
-# Or Using Yarn
-yarn add locale-codes
-```
-
-## Example
-
-```js
-const locale = require('locale-codes')
-
-locale.all // [language: '...]
-locale.getByTag('pt-br').name // 'Portuguese'
-```
-
-## Documentation
-
 ### API
 
 #### `locale.all`
@@ -48,6 +20,7 @@ Get information
 - `getByLCID(lcid)` = `where('lcid', id)`
 - `getByISO6392(text)` = `where('iso639-2', text)`
 - `getByISO6391(text)` = `where('iso639-1', text)`
+
 
 ### Locale List
 
@@ -872,16 +845,3 @@ Zarma | null | dje | 4096 | null | null |
 Zarma | Niger | dje-NE | 4096 | null | null |
 Zulu | null | zu | 53 | zul | zu |
 Zulu | South Africa | zu-ZA | 1077 | zul | zu |
-
-## Dependencies
-
-- [iso639-codes](https://ghub.io/iso639-codes): ISO639 Codes for JavaScript
-- [windows-locale](https://ghub.io/windows-locale): Windows Language Code Identifier (LCID) for JavaScript
-
-## Contributors
-
-Pull requests and stars are always welcome. For bugs and feature requests, please [create an issue](https://github.com/TiagoDanin/Locale-Codes/issues). [List of all contributors](https://github.com/TiagoDanin/Locale-Codes/graphs/contributors).
-
-## License
-
-[MIT](LICENSE) © [Tiago Danin](https://TiagoDanin.github.io)
