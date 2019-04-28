@@ -1,0 +1,57 @@
+{
+	"name": "locale-codes",
+	"main": "index.js",
+	"preferGlobal": false,
+	"version": "0.0.1",
+	"description": " Language codes & country codes",
+	"author": {
+		"name": "Tiago Danin",
+		"email": "TiagoDanin@outlook.com",
+		"url": "https://TiagoDanin.github.io"
+	},
+	"license": "MIT",
+	"keywords": [
+		"code",
+		"codes",
+		"country",
+		"iso",
+		"lang",
+		"language",
+		"languages",
+		"locale",
+		"locales",
+		"localization",
+		"module",
+		"tag"
+	],
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Nice Test :)\""
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TiagoDanin/Locale-Codes.git"
+	},
+	"homepage": "https://TiagoDanin.github.io/Locale-Codes",
+	"bugs": {
+		"url": "https://github.com/TiagoDanin/Locale-Codes/issues"
+	},
+	"github": {
+		"name": "Locale-Codes",
+		"owner": "TiagoDanin"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"index.js"
+	],
+	"dependencies": {
+		"iso639-codes": "^1.0.1",
+		"windows-locale": "^1.0.1"
+	},
+	"devDependencies": {}
+}
