@@ -2,7 +2,7 @@
 	"name": "locale-codes",
 	"main": "index.js",
 	"preferGlobal": false,
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": " Language codes & country codes",
 	"author": {
 		"name": "Tiago Danin",
@@ -59,8 +59,8 @@
 	],
 	"dependencies": {
 		"iso639-codes": "^1.0.1",
-		"windows-locale": "^1.0.1",
-		"langs": "^2.0.0"
+		"langs": "^2.0.0",
+		"windows-locale": "^1.0.1"
 	},
 	"devDependencies": {}
 }
