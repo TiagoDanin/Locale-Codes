@@ -1,5 +1,6 @@
 const lcid = require('windows-locale')
 const iso = require('iso639-codes')
+const langs = require('langs').all()
 
 let all = []
 
@@ -11,26 +12,36 @@ const isoKeys = Object.keys(iso)
 
 lcidKeys.map((id) => {
 	lcidLanguage = id
-	isoLanguage = isoKeys.find(name => name.toLowerCase() == lcid[lcidLanguage].language.toLowerCase())
-	if (!isoLanguage) {
-		all.push({
-			['name']     : lcid[lcidLanguage]['language'],
-			['location'] : lcid[lcidLanguage]['location'],
-			['tag']      : lcid[lcidLanguage]['tag'],
-			['lcid']     : lcid[lcidLanguage]['id'],
-			['iso639-2'] : null,
-			['iso639-1'] : null
-		})
-	} else {
-		all.push({
-			['name']     : lcid[lcidLanguage]['language'],
-			['location'] : lcid[lcidLanguage]['location'],
-			['tag']      : lcid[lcidLanguage]['tag'],
-			['lcid']     : lcid[lcidLanguage]['id'],
-			['iso639-2'] : iso[isoLanguage]['iso639-2'],
-			['iso639-1'] : iso[isoLanguage]['iso639-1']
-		})
+	let locale = {
+		['name']     : lcid[lcidLanguage]['language'],
+		['local']    : null,
+		['location'] : lcid[lcidLanguage]['location'],
+		['tag']      : lcid[lcidLanguage]['tag'],
+		['lcid']     : lcid[lcidLanguage]['id'],
+		['iso639-2'] : null,
+		['iso639-1'] : null
 	}
+
+	isoLanguage = isoKeys.find(name => name.toLowerCase() == lcid[lcidLanguage].language.toLowerCase())
+	if (isoLanguage) {
+		locale['iso639-2'] = iso[isoLanguage]['iso639-2']
+		locale['iso639-1'] = iso[isoLanguage]['iso639-1']
+
+		const nameLocal = langs.find(element => {
+			if (element['2T']) {
+				return element['2T'].toLowerCase() == locale['iso639-2']
+			}
+			return false
+		})
+
+		if (nameLocal) {
+			locale['local'] = nameLocal.local
+		}
+	}
+
+
+
+	all.push(locale)
 })
 
 const where = (key = 'name', text = '') => {
@@ -41,6 +52,8 @@ const where = (key = 'name', text = '') => {
 }
 
 const getByName = (text) => where('name', text)
+
+const getByNameLocal = (text) => where('local', text)
 
 const getByLocation = (text) => where('location', text)
 

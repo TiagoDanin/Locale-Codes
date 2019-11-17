@@ -59,7 +59,8 @@
 	],
 	"dependencies": {
 		"iso639-codes": "^1.0.1",
-		"windows-locale": "^1.0.1"
+		"windows-locale": "^1.0.1",
+		"langs": "^2.0.0"
 	},
 	"devDependencies": {}
 }
