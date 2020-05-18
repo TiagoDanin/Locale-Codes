@@ -24,6 +24,15 @@ locale.all // [language: '...]
 locale.getByTag('pt-br').name // 'Portuguese'
 ```
 
+Or in Typescript:
+
+```typescript
+import * as LocaleCodes from "locale-codes";
+
+LocaleCodes.all // ILocale[]
+LocaleCodes.getByTag('pt-br').name // 'Portuguese'
+```
+
 ## Documentation
 
 ### API
