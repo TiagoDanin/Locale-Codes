@@ -34,7 +34,7 @@
 	],
 	"scripts": {
 		"start": "node index.js",
-		"test": "node test.js"
+		"test": "xo && tsd && node test.js"
 	},
 	"engines": {
 		"node": ">=8"
@@ -55,12 +55,22 @@
 	"files": [
 		"LICENSE",
 		"README.md",
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"dependencies": {
 		"iso639-codes": "^1.0.1",
 		"langs": "^2.0.0",
 		"windows-locale": "^1.0.1"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"tsd": "^0.11.0",
+		"xo": "^0.30.0"
+	},
+	"xo": {
+		"semicolon": false,
+		"rules": {
+			"array-callback-return": "off"
+		}
+	}
 }
