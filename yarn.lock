@@ -4310,10 +4310,10 @@ widest-line@^3.1.0:
   dependencies:
     string-width "^4.0.0"
 
-windows-locale@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/windows-locale/-/windows-locale-1.0.1.tgz#b965309efddc48bf44912c8e596dd3796387e568"
-  integrity sha512-X8B22Cg9njwV4h3C5j28xmZ2eWaO69j63WhReeglB69LOT3LoqSO4Vb6TTVSfFikh4KQ9qBOJb6+WvR4tVLTfQ==
+windows-locale@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/windows-locale/-/windows-locale-1.1.0.tgz#b2bb0822bea74b0fca828e37a2df559d3cda05d6"
+  integrity sha512-d8SRvKELVY1UkZ/X1sg9l0AUDLhfLF4rUNaODrwb7+1zrBJNV9ggyF4G/SNJa0br69RMebZGKB3Rl2AQGNYETQ==
 
 word-wrap@~1.2.3:
   version "1.2.3"
