@@ -173,10 +173,16 @@ Catalan | Català | Andorra | ca-AD | 4096 | cat | ca |
 Catalan | Català | France | ca-FR | 4096 | cat | ca |
 Catalan | Català | Italy | ca-IT | 4096 | cat | ca |
 Catalan | Català | Spain | ca-ES | 1027 | cat | ca |
-Central Atlas Tamazight  | null | Morocco | tzm-Latn- | 4096 | null | null |
+Cebuano | null | null | ceb | 4096 | ceb | null |
+Cebuan (Latin) | null | null | ceb-Latn | 4096 | null | null |
+Cebuan (Latin) | null | Philippines | ceb-Latn-PH | 4096 | null | null |
+Central Atlas Tamazight (Latin) | null | Morocco | tzm-Latn- | 4096 | null | null |
 Central Kurdish | null | null | ku | 146 | null | null |
 Central Kurdish | null | null | ku-Arab | 31890 | null | null |
 Central Kurdish | null | Iraq | ku-Arab-IQ | 1170 | null | null |
+Chakma | null | null | ccp | 4096 | null | null |
+Chakma | null | Chakma | ccp-Cakm | 4096 | null | null |
+Chakma | null | India | ccp-Cakm- | 4096 | null | null |
 Chechen | Нохчийн | Russia | cd-RU | 4096 | che | ce |
 Cherokee | null | null | chr | 92 | chr | null |
 Cherokee | null | null | chr-Cher | 31836 | chr | null |
@@ -309,7 +315,7 @@ English | English | Slovenia | en-SI | 4096 | eng | en |
 English | English | Solomon Islands | en-SB | 4096 | eng | en |
 English | English | South Africa | en-ZA | 7177 | eng | en |
 English | English | South Sudan | en-SS | 4096 | eng | en |
-English | English | St Helena, Ascension, Tristan da  | en-SH | 4096 | eng | en |
+English | English | St Helena, Ascension,  Tristan da Cunha | en-SH | 4096 | eng | en |
 English | English | Sudan | en-SD | 4096 | eng | en |
 English | English | Swaziland | en-SZ | 4096 | eng | en |
 English | English | Sweden | en-SE | 4096 | eng | en |
@@ -321,6 +327,7 @@ English | English | Trinidad and Tobago | en-TT | 11273 | eng | en |
 English | English | Turks and Caicos Islands | en-TC | 4096 | eng | en |
 English | English | Tuvalu | en-TV | 4096 | eng | en |
 English | English | Uganda | en-UG | 4096 | eng | en |
+English | English | United Arab Emirates | en-AE | 19465 | eng | en |
 English | English | United Kingdom | en-GB | 2057 | eng | en |
 English | English | United States | en-US | 1033 | eng | en |
 English | English | US Minor Outlying Islands | en-UM | 4096 | eng | en |
@@ -539,7 +546,7 @@ Lingala | Lingála | Congo DRC | ln-CD | 4096 | lin | ln |
 Lithuanian | Lietuvių | null | lt | 39 | lit | lt |
 Lithuanian | Lietuvių | Lithuania | lt-LT | 1063 | lit | lt |
 Low German | null | null | nds | 4096 | nds | null |
-Low German  | null | Germany | nds-DE | 4096 | null | null |
+Low German | null | Germany | nds-DE | 4096 | nds | null |
 Low German | null | Netherlands | nds-NL | 4096 | nds | null |
 Lower Sorbian | null | null | dsb | 31790 | dsb | null |
 Lower Sorbian | null | Germany | dsb-DE | 2094 | dsb | null |
@@ -552,7 +559,7 @@ Luxembourgish | Lëtzebuergesch | Luxembourg | lb-LU | 1134 | ltz | lb |
 Luyia | null | null | luy | 4096 | null | null |
 Luyia | null | Kenya | luy-KE | 4096 | null | null |
 Macedonian | null | null | mk | 47 | mac/mkd | mk |
-Macedonian | null | North Macedonia  | mk-MK | 1071 | mac/mkd | mk |
+Macedonian | null | North Macedonia | mk-MK | 1071 | mac/mkd | mk |
 Machame | null | null | jmc | 4096 | null | null |
 Machame | null | Tanzania | jmc-TZ | 4096 | null | null |
 Makhuwa-Meetto | null | null | mgh | 4096 | null | null |
@@ -589,8 +596,9 @@ Mohawk | null | Canada | moh-CA | 1148 | moh | null |
 Mongolian (Cyrillic) | null | null | mn | 80 | null | null |
 Mongolian (Cyrillic) | null | null | mn-Cyrl | 30800 | null | null |
 Mongolian (Cyrillic) | null | Mongolia | mn-MN | 1104 | null | null |
-Mongolian (Traditional  | null | null | mn-Mong | 31824 | null | null |
-Mongolian (Traditional  | null | Mongolia | mn-Mong- | 3152 | null | null |
+Mongolian (Traditional Mongolian) | null | null | mn-Mong | 31824 | null | null |
+Mongolian (Traditional Mongolian) | null | People's Republic of China | mn-Mong-CN | 2128 | null | null |
+Mongolian (Traditional Mongolian) | null | Mongolia | mn-Mong-MN | 3152 | null | null |
 Morisyen | null | null | mfe | 4096 | null | null |
 Morisyen | null | Mauritius | mfe-MU | 4096 | null | null |
 Mundang | null | null | mua | 4096 | null | null |
@@ -633,6 +641,7 @@ Ossetian | Ирон æвзаг | Cyrillic, Georgia | os-GE | 4096 | oss | os |
 Ossetian | Ирон æвзаг | Cyrillic, Russia | os-RU | 4096 | oss | os |
 Pashto | پښتو | null | ps | 99 | pus | ps |
 Pashto | پښتو | Afghanistan | ps-AF | 1123 | pus | ps |
+Pashto | پښتو | Pakistan | ps-PK | 4096 | pus | ps |
 Persian | null | null | fa | 41 | per/fas | fa |
 Persian | null | Afghanistan | fa-AF | 4096 | per/fas | fa |
 Persian | null | Iran | fa-IR | 1065 | per/fas | fa |
@@ -652,9 +661,9 @@ Portuguese | Português | São Tomé and Príncipe | pt-ST | 4096 | por | pt |
 Portuguese | Português | Switzerland | pt-CH | 4096 | por | pt |
 Portuguese | Português | Timor-Leste | pt-TL | 4096 | por | pt |
 Prussian | null | null | prg-001 | 4096 | null | null |
-Pseudo Language | null | Pseudo locale for east Asian/complex  | qps-ploca | 1534 | null | null |
-Pseudo Language | null | Pseudo locale used for localization  | qps-ploc | 1281 | null | null |
-Pseudo Language | null | Pseudo locale used for localization  | qps-plocm | 2559 | null | null |
+Pseudo Language | null | Pseudo locale for east Asian/complex script localization testing | qps-ploca | 1534 | null | null |
+Pseudo Language | null | Pseudo locale used for localization testing | qps-ploc | 1281 | null | null |
+Pseudo Language | null | Pseudo locale used for localization testing of mirrored locales | qps-plocm | 2559 | null | null |
 Punjabi | ਪੰਜਾਬੀ | null | pa | 70 | pan | pa |
 Punjabi | ਪੰਜਾਬੀ | null | pa-Arab | 31814 | pan | pa |
 Punjabi | ਪੰਜਾਬੀ | India | pa-IN | 1094 | pan | pa |
@@ -781,11 +790,11 @@ Spanish | Español | Philippines | es-PH | 4096 | spa | es |
 Spanish | Español | Puerto Rico | es-PR | 20490 | spa | es |
 Spanish | Español | Spain | es-ES_tradnl | 1034 | spa | es |
 Spanish | Español | Spain | es-ES | 3082 | spa | es |
-Spanish | Español | United States | es-US | 21514 | spa | es |
+Spanish | Español | UnitedStates | es-US | 21514 | spa | es |
 Spanish | Español | Uruguay | es-UY | 14346 | spa | es |
-Standard Moroccan  | null | null | zgh | 4096 | null | null |
-Standard Moroccan  | null | Morocco | zgh-Tfng-MA | 4096 | null | null |
-Standard Moroccan  | null | Tifinagh | zgh-Tfng | 4096 | null | null |
+Standard Moroccan Tamazight | null | null | zgh | 4096 | zgh | null |
+Standard Moroccan Tamazight | null | Morocco | zgh-Tfng-MA | 4096 | zgh | null |
+Standard Moroccan Tamazight | null | Tifinagh | zgh-Tfng | 4096 | zgh | null |
 Swati | SiSwati | null | ss | 4096 | ssw | ss |
 Swati | SiSwati | South Africa | ss-ZA | 4096 | ssw | ss |
 Swati | SiSwati | Swaziland | ss-SZ | 4096 | ssw | ss |
@@ -864,34 +873,6 @@ Vai (Latin) | null | Liberia | vai-Latn-LR | 4096 | null | null |
 Vai (Latin) | null | null | vai-Latn | 4096 | null | null |
 Valencian | Català | Spain | ca-ES- | 2051 | cat | ca |
 Venda | Tshivenḓa | null | ve | 51 | ven | ve |
-Venda | Tshivenḓa | South Africa | ve-ZA | 1075 | ven | ve |
-Vietnamese | Tiếng Việt | null | vi | 42 | vie | vi |
-Vietnamese | Tiếng Việt | Vietnam | vi-VN | 1066 | vie | vi |
-Volapük | Volapük | null | vo | 4096 | vol | vo |
-Volapük | Volapük | World | vo-001 | 4096 | vol | vo |
-Vunjo | null | null | vun | 4096 | null | null |
-Vunjo | null | Tanzania | vun-TZ | 4096 | null | null |
-Walser | null | null | wae | 4096 | null | null |
-Walser | null | Switzerland | wae-CH | 4096 | null | null |
-Welsh | null | null | cy | 82 | wel/cym | cy |
-Welsh | null | United Kingdom | cy-GB | 1106 | wel/cym | cy |
-Wolaytta | null | null | wal | 4096 | wal | null |
-Wolaytta | null | Ethiopia | wal-ET | 4096 | wal | null |
-Wolof | Wolof | null | wo | 136 | wol | wo |
-Wolof | Wolof | Senegal | wo-SN | 1160 | wol | wo |
-Xhosa | isiXhosa | null | xh | 52 | xho | xh |
-Xhosa | isiXhosa | South Africa | xh-ZA | 1076 | xho | xh |
-Yangben | null | null | yav | 4096 | null | null |
-Yangben | null | Cameroon | yav-CM | 4096 | null | null |
-Yi | null | null | ii | 120 | null | null |
-Yi | null | People's Republic of China | ii-CN | 1144 | null | null |
-Yoruba | Yorùbá | null | yo | 106 | yor | yo |
-Yoruba | Yorùbá | Benin | yo-BJ | 4096 | yor | yo |
-Yoruba | Yorùbá | Nigeria | yo-NG | 1130 | yor | yo |
-Zarma | null | null | dje | 4096 | null | null |
-Zarma | null | Niger | dje-NE | 4096 | null | null |
-Zulu | isiZulu | null | zu | 53 | zul | zu |
-Zulu | isiZulu | South Africa | zu-ZA | 1077 | zul | zu |
 
 ## Tests
 
@@ -920,7 +901,7 @@ yarn test
 	<summary><a href="https://ghub.io/windows-locale">windows-locale</a>: Windows Language Code Identifier (LCID) for JavaScript</summary>
 	<b>Author</b>: Tiago Danin</br>
 	<b>License</b>: MIT</br>
-	<b>Version</b>: ^1.0.1
+	<b>Version</b>: ^1.1.0
 </details>
 
 ## Dev Dependencies
