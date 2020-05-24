@@ -82,24 +82,32 @@ baseURL: https://tiagodanin.github.io
 
 <div class="uk-container">
 	<h1 id="locale-codes"><a href="#locale-codes">Locale Codes</a></h1>
-<p><a href="https://travis-ci.org/TiagoDanin/Locale-Codes"><img src="https://img.shields.io/travis/TiagoDanin/Locale-Codes.svg?branch=master&#x26;style=flat-square" alt="Travis"></a> <a href="https://npmjs.org/package/locale-codes"><img src="https://img.shields.io/npm/dt/locale-codes.svg?style=flat-square" alt="Downloads"></a> <a href="https://npmjs.org/package/locale-codes"><img src="https://img.shields.io/node/v/locale-codes.svg?style=flat-square" alt="Node"></a> <a href="https://npmjs.org/package/locale-codes"><img src="https://img.shields.io/npm/v/locale-codes.svg?style=flat-square" alt="Version"></a> </p>
+<p><a href="https://travis-ci.org/TiagoDanin/Locale-Codes"><img src="https://img.shields.io/travis/TiagoDanin/Locale-Codes.svg?branch=master&#x26;style=flat-square" alt="Travis"></a> <a href="https://npmjs.org/package/locale-codes"><img src="https://img.shields.io/npm/dt/locale-codes.svg?style=flat-square" alt="Downloads"></a> <a href="https://npmjs.org/package/locale-codes"><img src="https://img.shields.io/node/v/locale-codes.svg?style=flat-square" alt="Node"></a> <a href="https://npmjs.org/package/locale-codes"><img src="https://img.shields.io/npm/v/locale-codes.svg?style=flat-square" alt="Version"></a> <a href="https://github.com/xojs/xo"><img src="https://img.shields.io/badge/code%20style-XO-red.svg?style=flat-square" alt="XO code style"></a> </p>
 <p> Language codes &#x26; country codes</p>
 <h2 id="installation"><a href="#installation">Installation</a></h2>
-<p>Module available through the <a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the  <a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a> or <a href="https://yarnpkg.com/en/"><code>yarn</code></a> command line tools.</p>
-<pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
-npm install locale-codes --save
-<span class="hljs-comment"># Or Using Yarn</span>
-yarn add locale-codes</code></pre>
-<h2 id="example"><a href="#example">Example</a></h2>
-<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> locale = <span class="hljs-built_in">require</span>(<span class="hljs-string">'locale-codes'</span>)
+<p>Module available through the <a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the <a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a> or <a href="https://yarnpkg.com/en/"><code>yarn</code></a> command line tool.</p>
+<pre><code class="hljs language-sh"><span class="hljs-comment"># Yarn (Recomend)</span>
+yarn add locale-codes
+<span class="hljs-comment"># NPM </span>
+npm install locale-codes --save</code></pre>
+<h2 id="examples"><a href="#examples">Examples</a></h2>
+<h3 id="javascript"><a href="#javascript">JavaScript</a></h3>
+<pre><code class="hljs language-js"><span class="hljs-comment">/* eslint-disable no-unused-expressions */</span>
+<span class="hljs-keyword">const</span> locale = <span class="hljs-built_in">require</span>(<span class="hljs-string">'locale-codes'</span>)
 
-locale.all <span class="hljs-comment">// [language: '...]</span>
-locale.getByTag(<span class="hljs-string">'pt-br'</span>).name <span class="hljs-comment">// 'Portuguese'</span></code></pre>
-<p>Or in Typescript:</p>
-<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> LocaleCodes <span class="hljs-keyword">from</span> <span class="hljs-string">"locale-codes"</span>;
+locale.all <span class="hljs-comment">// [language: '...']</span>
+locale.getByTag(<span class="hljs-string">'pt-br'</span>).name <span class="hljs-comment">// 'Portuguese'</span>
+locale.where(<span class="hljs-string">'tag'</span>, <span class="hljs-string">'pt-br'</span>).name <span class="hljs-comment">// 'Portuguese'</span></code></pre>
+<h3 id="typescript"><a href="#typescript">TypeScript</a></h3>
+<pre><code class="hljs language-ts"><span class="hljs-comment">/* eslint-disable @typescript-eslint/no-unused-expressions, @typescript-eslint/no-unused-vars */</span>
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> locale <span class="hljs-keyword">from</span> <span class="hljs-string">'locale-codes'</span>
+<span class="hljs-keyword">import</span> {ILocale} <span class="hljs-keyword">from</span> <span class="hljs-string">'.'</span>
 
-LocaleCodes.all <span class="hljs-comment">// ILocale[]</span>
-LocaleCodes.getByTag(<span class="hljs-string">'pt-br'</span>).name <span class="hljs-comment">// 'Portuguese'</span></code></pre>
+locale.all <span class="hljs-comment">// [language: '...']</span>
+<span class="hljs-keyword">const</span> localeSelect: ILocale = locale.all[<span class="hljs-number">0</span>]
+
+locale.getByTag(<span class="hljs-string">'pt-br'</span>).name <span class="hljs-comment">// 'Portuguese'</span>
+locale.where(<span class="hljs-string">'tag'</span>, <span class="hljs-string">'pt-br'</span>).name <span class="hljs-comment">// 'Portuguese'</span></code></pre>
 <h2 id="documentation"><a href="#documentation">Documentation</a></h2>
 <h3 id="api"><a href="#api">API</a></h3>
 <h4 id="localeall"><a href="#localeall"><code>locale.all</code></a></h4>
@@ -7518,9 +7526,7 @@ Keeling
 </table>
 <h2 id="tests"><a href="#tests">Tests</a></h2>
 <p>To run the test suite, first install the dependencies, then run <code>test</code>:</p>
-<pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
-npm <span class="hljs-built_in">test</span>
-<span class="hljs-comment"># Or Using Yarn</span>
+<pre><code class="hljs language-sh"><span class="hljs-comment"># Using Yarn</span>
 yarn <span class="hljs-built_in">test</span></code></pre>
 <h2 id="dependencies"><a href="#dependencies">Dependencies</a></h2>
 <details>
@@ -7530,16 +7536,29 @@ yarn <span class="hljs-built_in">test</span></code></pre>
 	<b>Version</b>: ^1.0.1
 </details>
 <details>
+	<summary><a href="https://ghub.io/langs">langs</a>: ISO 639-1/2/3 Language codes with English and local names</summary>
+	<b>Author</b>: adlawson</br>
+	<b>License</b>: MIT</br>
+	<b>Version</b>: ^2.0.0
+</details>
+<details>
 	<summary><a href="https://ghub.io/windows-locale">windows-locale</a>: Windows Language Code Identifier (LCID) for JavaScript</summary>
 	<b>Author</b>: Tiago Danin</br>
 	<b>License</b>: MIT</br>
 	<b>Version</b>: ^1.0.1
 </details>
+<h2 id="dev-dependencies"><a href="#dev-dependencies">Dev Dependencies</a></h2>
 <details>
-	<summary><a href="https://ghub.io/langs">langs</a>: ISO 639-1/2/3 Language codes with English and local names</summary>
-	<b>Author</b>: adlawson</br>
+	<summary><a href="https://ghub.io/tsd">tsd</a>: Check TypeScript type definitions</summary>
+	<b>Author</b>: Sam Verschueren</br>
 	<b>License</b>: MIT</br>
-	<b>Version</b>: ^2.0.0
+	<b>Version</b>: ^0.11.0
+</details>
+<details>
+	<summary><a href="https://ghub.io/xo">xo</a>: JavaScript/TypeScript linter with great defaults</summary>
+	<b>Author</b>: Sindre Sorhus</br>
+	<b>License</b>: MIT</br>
+	<b>Version</b>: ^0.30.0
 </details>
 <h2 id="contributors"><a href="#contributors">Contributors</a></h2>
 <p>Pull requests and stars are always welcome. For bugs and feature requests, please <a href="https://github.com/TiagoDanin/Locale-Codes/issues">create an issue</a>. <a href="https://github.com/TiagoDanin/Locale-Codes/graphs/contributors">List of all contributors</a>.</p>
