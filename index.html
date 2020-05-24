@@ -95,6 +95,11 @@ yarn add locale-codes</code></pre>
 
 locale.all <span class="hljs-comment">// [language: '...]</span>
 locale.getByTag(<span class="hljs-string">'pt-br'</span>).name <span class="hljs-comment">// 'Portuguese'</span></code></pre>
+<p>Or in Typescript:</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> LocaleCodes <span class="hljs-keyword">from</span> <span class="hljs-string">"locale-codes"</span>;
+
+LocaleCodes.all <span class="hljs-comment">// ILocale[]</span>
+LocaleCodes.getByTag(<span class="hljs-string">'pt-br'</span>).name <span class="hljs-comment">// 'Portuguese'</span></code></pre>
 <h2 id="documentation"><a href="#documentation">Documentation</a></h2>
 <h3 id="api"><a href="#api">API</a></h3>
 <h4 id="localeall"><a href="#localeall"><code>locale.all</code></a></h4>
@@ -7554,7 +7559,7 @@ yarn <span class="hljs-built_in">test</span></code></pre>
 		<div>
 			<div class="uk-card uk-card-default uk-card-hover uk-card-body">
 				<h3 class="uk-card-title"><span uk-icon="star"></span></h3>
-				<p>1</p>
+				<p>2</p>
 			</div>
 		</div>
 	</div>
