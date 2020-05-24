@@ -1,36 +1,45 @@
 # Locale Codes
 
-[![Travis](https://img.shields.io/travis/TiagoDanin/Locale-Codes.svg?branch=master&style=flat-square)](https://travis-ci.org/TiagoDanin/Locale-Codes) [![Downloads](https://img.shields.io/npm/dt/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Node](https://img.shields.io/node/v/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Version](https://img.shields.io/npm/v/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) 
+[![Travis](https://img.shields.io/travis/TiagoDanin/Locale-Codes.svg?branch=master&style=flat-square)](https://travis-ci.org/TiagoDanin/Locale-Codes) [![Downloads](https://img.shields.io/npm/dt/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Node](https://img.shields.io/node/v/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Version](https://img.shields.io/npm/v/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![XO code style](https://img.shields.io/badge/code%20style-XO-red.svg?style=flat-square)](https://github.com/xojs/xo) 
 
  Language codes & country codes
 
 ## Installation
 
-Module available through the [npm registry](https://www.npmjs.com/). It can be installed using the  [`npm`](https://docs.npmjs.com/getting-started/installing-npm-packages-locally) or [`yarn`](https://yarnpkg.com/en/) command line tools.
+Module available through the [npm registry](https://www.npmjs.com/). It can be installed using the [`npm`](https://docs.npmjs.com/getting-started/installing-npm-packages-locally) or [`yarn`](https://yarnpkg.com/en/) command line tool.
 
 ```sh
-# NPM
-npm install locale-codes --save
-# Or Using Yarn
+# Yarn (Recomend)
 yarn add locale-codes
+# NPM 
+npm install locale-codes --save
 ```
 
-## Example
+## Examples
+
+### JavaScript
 
 ```js
+/* eslint-disable no-unused-expressions */
 const locale = require('locale-codes')
 
-locale.all // [language: '...]
+locale.all // [language: '...']
 locale.getByTag('pt-br').name // 'Portuguese'
+locale.where('tag', 'pt-br').name // 'Portuguese'
 ```
 
-Or in Typescript:
+### TypeScript
 
-```typescript
-import * as LocaleCodes from "locale-codes";
+```ts
+/* eslint-disable @typescript-eslint/no-unused-expressions, @typescript-eslint/no-unused-vars */
+import * as locale from 'locale-codes'
+import {ILocale} from '.'
 
-LocaleCodes.all // ILocale[]
-LocaleCodes.getByTag('pt-br').name // 'Portuguese'
+locale.all // [language: '...']
+const localeSelect: ILocale = locale.all[0]
+
+locale.getByTag('pt-br').name // 'Portuguese'
+locale.where('tag', 'pt-br').name // 'Portuguese'
 ```
 
 ## Documentation
@@ -889,9 +898,7 @@ Zulu | isiZulu | South Africa | zu-ZA | 1077 | zul | zu |
 To run the test suite, first install the dependencies, then run `test`:
 
 ```sh
-# NPM
-npm test
-# Or Using Yarn
+# Using Yarn
 yarn test
 ```
 
@@ -904,16 +911,31 @@ yarn test
 	<b>Version</b>: ^1.0.1
 </details>
 <details>
+	<summary><a href="https://ghub.io/langs">langs</a>: ISO 639-1/2/3 Language codes with English and local names</summary>
+	<b>Author</b>: adlawson</br>
+	<b>License</b>: MIT</br>
+	<b>Version</b>: ^2.0.0
+</details>
+<details>
 	<summary><a href="https://ghub.io/windows-locale">windows-locale</a>: Windows Language Code Identifier (LCID) for JavaScript</summary>
 	<b>Author</b>: Tiago Danin</br>
 	<b>License</b>: MIT</br>
 	<b>Version</b>: ^1.0.1
 </details>
+
+## Dev Dependencies
+
 <details>
-	<summary><a href="https://ghub.io/langs">langs</a>: ISO 639-1/2/3 Language codes with English and local names</summary>
-	<b>Author</b>: adlawson</br>
+	<summary><a href="https://ghub.io/tsd">tsd</a>: Check TypeScript type definitions</summary>
+	<b>Author</b>: Sam Verschueren</br>
 	<b>License</b>: MIT</br>
-	<b>Version</b>: ^2.0.0
+	<b>Version</b>: ^0.11.0
+</details>
+<details>
+	<summary><a href="https://ghub.io/xo">xo</a>: JavaScript/TypeScript linter with great defaults</summary>
+	<b>Author</b>: Sindre Sorhus</br>
+	<b>License</b>: MIT</br>
+	<b>Version</b>: ^0.30.0
 </details>
 
 ## Contributors
