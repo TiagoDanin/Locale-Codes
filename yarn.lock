@@ -4311,9 +4311,9 @@ widest-line@^3.1.0:
     string-width "^4.0.0"
 
 windows-locale@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/windows-locale/-/windows-locale-1.1.0.tgz#b2bb0822bea74b0fca828e37a2df559d3cda05d6"
-  integrity sha512-d8SRvKELVY1UkZ/X1sg9l0AUDLhfLF4rUNaODrwb7+1zrBJNV9ggyF4G/SNJa0br69RMebZGKB3Rl2AQGNYETQ==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/windows-locale/-/windows-locale-1.1.2.tgz#742953cc20b5b0c21d2d2eeb2a8ede437e251cb0"
+  integrity sha512-/UYu06jpOUHdyuenDMhf0xEwMWIBrTCu6R3uw7jBkyzQ76Qjvz8Al29NFMasHmM520v/APFIIhGSYOvUbqrqlQ==
 
 word-wrap@~1.2.3:
   version "1.2.3"

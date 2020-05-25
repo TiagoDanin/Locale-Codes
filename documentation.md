@@ -828,3 +828,31 @@ Vai (Latin) | null | Liberia | vai-Latn-LR | 4096 | null | null |
 Vai (Latin) | null | null | vai-Latn | 4096 | null | null |
 Valencian | Català | Spain | ca-ES- | 2051 | cat | ca |
 Venda | Tshivenḓa | null | ve | 51 | ven | ve |
+Venda | Tshivenḓa | South Africa | ve-ZA | 1075 | ven | ve |
+Vietnamese | Tiếng Việt | null | vi | 42 | vie | vi |
+Vietnamese | Tiếng Việt | Vietnam | vi-VN | 1066 | vie | vi |
+Volapük | Volapük | null | vo | 4096 | vol | vo |
+Volapük | Volapük | World | vo-001 | 4096 | vol | vo |
+Vunjo | null | null | vun | 4096 | null | null |
+Vunjo | null | Tanzania | vun-TZ | 4096 | null | null |
+Walser | null | null | wae | 4096 | null | null |
+Walser | null | Switzerland | wae-CH | 4096 | null | null |
+Welsh | null | null | cy | 82 | wel/cym | cy |
+Welsh | null | United Kingdom | cy-GB | 1106 | wel/cym | cy |
+Wolaytta | null | null | wal | 4096 | wal | null |
+Wolaytta | null | Ethiopia | wal-ET | 4096 | wal | null |
+Wolof | Wolof | null | wo | 136 | wol | wo |
+Wolof | Wolof | Senegal | wo-SN | 1160 | wol | wo |
+Xhosa | isiXhosa | null | xh | 52 | xho | xh |
+Xhosa | isiXhosa | South Africa | xh-ZA | 1076 | xho | xh |
+Yangben | null | null | yav | 4096 | null | null |
+Yangben | null | Cameroon | yav-CM | 4096 | null | null |
+Yi | null | null | ii | 120 | null | null |
+Yi | null | People's Republic of China | ii-CN | 1144 | null | null |
+Yoruba | Yorùbá | null | yo | 106 | yor | yo |
+Yoruba | Yorùbá | Benin | yo-BJ | 4096 | yor | yo |
+Yoruba | Yorùbá | Nigeria | yo-NG | 1130 | yor | yo |
+Zarma | null | null | dje | 4096 | null | null |
+Zarma | null | Niger | dje-NE | 4096 | null | null |
+Zulu | isiZulu | null | zu | 53 | zul | zu |
+Zulu | isiZulu | South Africa | zu-ZA | 1077 | zul | zu |
