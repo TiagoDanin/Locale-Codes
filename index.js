@@ -48,7 +48,7 @@ const where = (key = 'name', text = '') => {
 		return all.find(element => element[key] === text)
 	}
 
-	return all.find(element => element[key].toLowerCase() === text.toLowerCase())
+	return all.find(element => elelment[key] && element[key].toLowerCase() === text.toLowerCase())
 }
 
 const getByName = text => where('name', text)
