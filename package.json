@@ -64,7 +64,7 @@
 		"windows-locale": "^1.1.0"
 	},
 	"devDependencies": {
-		"tsd": "^0.13.1",
+		"tsd": "^0.30.7",
 		"xo": "^0.30.0"
 	},
 	"xo": {
