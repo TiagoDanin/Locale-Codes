@@ -65,7 +65,7 @@
 	},
 	"devDependencies": {
 		"tsd": "^0.13.1",
-		"xo": "^0.30.0"
+		"xo": "^0.58.0"
 	},
 	"xo": {
 		"semicolon": false,
