@@ -37,7 +37,7 @@
 		"test": "xo && tsd && node test.js"
 	},
 	"engines": {
-		"node": ">=v14.17.4"
+		"node": ">=20.12.0"
 	},
 	"private": false,
 	"repository": {
