@@ -1,4 +1,4 @@
-const locale = require('.')
+const locale = require('../dist/index')
 const assert = require('assert')
 
 assert.equal(locale.all.length > 20, true)

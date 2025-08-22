@@ -1,4 +1,4 @@
-const locale = require('..')
+const locale = require('../dist/index')
 
 locale.all.map(locale => {
 	console.log(

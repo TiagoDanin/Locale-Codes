@@ -1,8 +1,6 @@
 # Locale Codes
 
-[![Travis](https://img.shields.io/travis/TiagoDanin/Locale-Codes.svg?branch=master&style=flat-square)](https://travis-ci.org/TiagoDanin/Locale-Codes) [![Downloads](https://img.shields.io/npm/dt/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Node](https://img.shields.io/node/v/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![Version](https://img.shields.io/npm/v/locale-codes.svg?style=flat-square)](https://npmjs.org/package/locale-codes) [![XO code style](https://img.shields.io/badge/code%20style-XO-red.svg?style=flat-square)](https://github.com/xojs/xo) 
-
- Language codes & country codes
+Language codes & country codes
 
 ## Installation
 
@@ -881,6 +879,9 @@ To run the test suite, first install the dependencies, then run `test`:
 ```sh
 # Using Yarn
 yarn test
+
+# Or using npm
+npm test
 ```
 
 ## Dependencies
