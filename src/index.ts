@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as lcid from 'windows-locale'
 import * as iso from 'iso639-codes'
 import { all as langs } from 'langs'

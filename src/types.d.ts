@@ -99,4 +99,4 @@ declare const localeCodes: {
 	getByISO6391: (text: string) => ILocale | undefined;
 }
 
-export = localeCodes
+export default localeCodes;

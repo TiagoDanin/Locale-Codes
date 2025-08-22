@@ -18,7 +18,6 @@ npm install locale-codes --save
 ### JavaScript
 
 ```js
-/* eslint-disable no-unused-expressions */
 const locale = require('locale-codes')
 
 locale.all // [language: '...']
@@ -29,7 +28,6 @@ locale.where('tag', 'pt-br').name // 'Portuguese'
 ### TypeScript
 
 ```ts
-/* eslint-disable @typescript-eslint/no-unused-expressions, @typescript-eslint/no-unused-vars */
 import * as locale from 'locale-codes'
 import {ILocale} from '.'
 
@@ -890,34 +888,16 @@ npm test
 	<summary><a href="https://ghub.io/iso639-codes">iso639-codes</a>: ISO639 Codes for JavaScript</summary>
 	<b>Author</b>: Tiago Danin</br>
 	<b>License</b>: MIT</br>
-	<b>Version</b>: ^1.0.1
 </details>
 <details>
 	<summary><a href="https://ghub.io/langs">langs</a>: ISO 639-1/2/3 Language codes with English and local names</summary>
 	<b>Author</b>: adlawson</br>
 	<b>License</b>: MIT</br>
-	<b>Version</b>: ^2.0.0
 </details>
 <details>
 	<summary><a href="https://ghub.io/windows-locale">windows-locale</a>: Windows Language Code Identifier (LCID) for JavaScript</summary>
 	<b>Author</b>: Tiago Danin</br>
 	<b>License</b>: MIT</br>
-	<b>Version</b>: ^1.1.0
-</details>
-
-## Dev Dependencies
-
-<details>
-	<summary><a href="https://ghub.io/tsd">tsd</a>: Check TypeScript type definitions</summary>
-	<b>Author</b>: Sam Verschueren</br>
-	<b>License</b>: MIT</br>
-	<b>Version</b>: ^0.11.0
-</details>
-<details>
-	<summary><a href="https://ghub.io/xo">xo</a>: JavaScript/TypeScript linter with great defaults</summary>
-	<b>Author</b>: Sindre Sorhus</br>
-	<b>License</b>: MIT</br>
-	<b>Version</b>: ^0.30.0
 </details>
 
 ## Contributors
