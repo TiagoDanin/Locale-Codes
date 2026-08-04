@@ -49,7 +49,7 @@ All languages
 Get information. Returns the **first** matching locale, or `undefined` when there is no match.
 
 - `name` - Language name (String)
-- `name` - Language name local (String || Null) 
+- `local` - Language name local (String || Null)
 - `location` - Location country (String || Null)
 - `tag` - LCID tag (String)
 - `lcid` - LCID id (Number)

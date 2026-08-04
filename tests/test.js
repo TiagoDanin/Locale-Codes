@@ -46,4 +46,30 @@ assert.deepEqual(locale.getAllByLCID(999999), [])
 assert.equal(Array.isArray(locale.getByISO6391('en')), false)
 assert.equal(locale.getByISO6391('en')['iso639-1'], 'en')
 
+// Public API surface - every documented method exists, every getBy* stays single
+const singleResultMethods = {
+	getByName: 'Portuguese',
+	getByNameLocal: 'Português',
+	getByLocation: 'Brazil',
+	getByTag: 'pt-BR',
+	getByLCID: 1046,
+	getByISO6392: 'por',
+	getByISO6391: 'pt'
+}
+Object.keys(singleResultMethods).forEach(method => {
+	const result = locale[method](singleResultMethods[method])
+	assert.equal(typeof locale[method], 'function', `${method} must be exported`)
+	assert.equal(Array.isArray(result), false, `${method} must not return an array`)
+	assert.equal(typeof result, 'object', `${method} must return a single locale`)
+	assert.equal(locale[method]('js-best'), undefined, `${method} must return undefined when there is no match`)
+	assert.equal(Array.isArray(locale[method.replace('getBy', 'getAllBy')](singleResultMethods[method])), true)
+})
+assert.equal(locale.where('tag', 'pt-BR'), locale.whereAll('tag', 'pt-BR')[0])
+
+// ILocale keeps the exact same fields
+assert.deepEqual(
+	Object.keys(locale.getByTag('pt-BR')),
+	['name', 'local', 'location', 'tag', 'lcid', 'iso639-2', 'iso639-1']
+)
+
 console.log('Done!')
