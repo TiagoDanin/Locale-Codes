@@ -50,11 +50,20 @@ export interface LocaleCodes {
 	all: ILocale[];
 
 	/**
-	 * Searches for a locale according to the parameter and value given
+	 * Searches for the first locale matching the parameter and value given
 	 * @param key Parameter to search - name, tag, etc (see ILocale)
 	 * @param text The value to search for
+	 * @returns The first matching locale, or undefined when there is no match
 	 */
 	where: (key?: keyof ILocale, text?: string | number) => ILocale | undefined;
+
+	/**
+	 * Searches for every locale matching the parameter and value given
+	 * @param key Parameter to search - name, tag, etc (see ILocale)
+	 * @param text The value to search for
+	 * @returns All matching locales, or an empty array when there is no match
+	 */
+	whereAll: (key?: keyof ILocale, text?: string | number) => ILocale[];
 
 	/**
 	 * Searches for a locale according to the English name given
@@ -97,4 +106,54 @@ export interface LocaleCodes {
 	 * @param text ISO 639-1 code - e.g. "en"
 	 */
 	getByISO6391: (text: string) => ILocale | undefined;
+
+	/**
+	 * Searches for every locale matching the English name given
+	 * @param text English name of the locales to find
+	 * @returns All matching locales, or an empty array when there is no match
+	 */
+	getAllByName: (text: string) => ILocale[];
+
+	/**
+	 * Searches for every locale matching the localised name given
+	 * @param text Localised name of the locales to find
+	 * @returns All matching locales, or an empty array when there is no match
+	 */
+	getAllByNameLocal: (text: string) => ILocale[];
+
+	/**
+	 * Searches for every locale matching the geographic location given
+	 * @param text Locale's geographic location - e.g. "Spain"
+	 * @returns All matching locales, or an empty array when there is no match
+	 */
+	getAllByLocation: (text: string) => ILocale[];
+
+	/**
+	 * Searches for every locale matching the tag given
+	 * @param text Locale tag - e.g. "en-GB"
+	 * @returns All matching locales, or an empty array when there is no match
+	 */
+	getAllByTag: (text: string) => ILocale[];
+
+	/**
+	 * Searches for every locale matching the Windows LCID decimal code given
+	 * @param id LCID decimal code - e.g. 2057
+	 * @returns All matching locales, or an empty array when there is no match
+	 */
+	getAllByLCID: (id: number) => ILocale[];
+
+	/**
+	 * Searches for every locale matching the three-character ISO 639-2 code given
+	 * @param text ISO 639-2 code - e.g. "eng"
+	 * @returns All matching locales, or an empty array when there is no match
+	 */
+	getAllByISO6392: (text: string) => ILocale[];
+
+	/**
+	 * Searches for every locale matching the two-character ISO 639-1 code given
+	 * @param text ISO 639-1 code - e.g. "en"
+	 * @returns All matching locales - e.g. en-US, en-GB, ... - or an empty
+	 * array when there is no match
+	 */
+	getAllByISO6391: (text: string) => ILocale[];
 }

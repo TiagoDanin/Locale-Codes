@@ -46,7 +46,7 @@ locale.where('tag', 'pt-br').name // 'Portuguese'
 All languages
 
 #### `locale.where(key, text)`
-Get information
+Get information. Returns the **first** matching locale, or `undefined` when there is no match.
 
 - `name` - Language name (String)
 - `name` - Language name local (String || Null) 
@@ -56,7 +56,20 @@ Get information
 - `iso639-2` - ISO 639-2 id (String)
 - `iso639-1` - ISO 639-1 id (String || Null)
 
+The search is case-insensitive and null-safe: locales without the searched
+field are skipped instead of throwing.
+
+#### `locale.whereAll(key, text)`
+Same as `locale.where(key, text)`, but returns **every** matching locale as an
+array. Returns an empty array when there is no match.
+
+```js
+locale.whereAll('iso639-1', 'en') // [{tag: 'en'}, {tag: 'en-US'}, {tag: 'en-GB'}, ...]
+```
+
 #### Shortcuts
+Single result - each one returns one `ILocale` or `undefined`:
+
 - `getByName(text)` = `where('name', text)`
 - `getByNameLocal(text)` = `where('local', text)`
 - `getByLocation`(text) = `where('location', text)`
@@ -64,6 +77,24 @@ Get information
 - `getByLCID(lcid)` = `where('lcid', id)`
 - `getByISO6392(text)` = `where('iso639-2', text)`
 - `getByISO6391(text)` = `where('iso639-1', text)`
+
+Every result - each one returns an array of `ILocale` (empty when there is no match):
+
+- `getAllByName(text)` = `whereAll('name', text)`
+- `getAllByNameLocal(text)` = `whereAll('local', text)`
+- `getAllByLocation(text)` = `whereAll('location', text)`
+- `getAllByTag(text)` = `whereAll('tag', text)`
+- `getAllByLCID(lcid)` = `whereAll('lcid', id)`
+- `getAllByISO6392(text)` = `whereAll('iso639-2', text)`
+- `getAllByISO6391(text)` = `whereAll('iso639-1', text)`
+
+```js
+locale.getByISO6391('en').tag // 'en' - a single locale
+locale.getAllByISO6391('en').length // 100+ - every English variant
+```
+
+> The `getBy*` methods keep their original behaviour and always return a single
+> result. Use the `getAllBy*` methods when you need every variant.
 
 ### Locale List
 
@@ -172,13 +203,13 @@ Catalan | Català | Spain | ca-ES | 1027 | cat | ca |
 Cebuano | null | null | ceb | 4096 | ceb | null |
 Cebuan (Latin) | null | null | ceb-Latn | 4096 | null | null |
 Cebuan (Latin) | null | Philippines | ceb-Latn-PH | 4096 | null | null |
-Central Atlas Tamazight (Latin) | null | Morocco | tzm-Latn- | 4096 | null | null |
+Central Atlas Tamazight (Latin) | null | Morocco | tzm-Latn | 4096 | null | null |
 Central Kurdish | null | null | ku | 146 | null | null |
 Central Kurdish | null | null | ku-Arab | 31890 | null | null |
 Central Kurdish | null | Iraq | ku-Arab-IQ | 1170 | null | null |
 Chakma | null | null | ccp | 4096 | null | null |
 Chakma | null | Chakma | ccp-Cakm | 4096 | null | null |
-Chakma | null | India | ccp-Cakm- | 4096 | null | null |
+Chakma | null | India | ccp-Cakm | 4096 | null | null |
 Chechen | Нохчийн | Russia | cd-RU | 4096 | che | ce |
 Cherokee | null | null | chr | 92 | chr | null |
 Cherokee | null | null | chr-Cher | 31836 | chr | null |
@@ -867,8 +898,36 @@ Vai | null | null | vai-Vaii | 4096 | vai | null |
 Vai | null | Liberia | vai-Vaii-LR | 4096 | vai | null |
 Vai (Latin) | null | Liberia | vai-Latn-LR | 4096 | null | null |
 Vai (Latin) | null | null | vai-Latn | 4096 | null | null |
-Valencian | Català | Spain | ca-ES- | 2051 | cat | ca |
+Valencian | Català | Spain | ca-ES | 2051 | cat | ca |
 Venda | Tshivenḓa | null | ve | 51 | ven | ve |
+Venda | Tshivenḓa | South Africa | ve-ZA | 1075 | ven | ve |
+Vietnamese | Tiếng Việt | null | vi | 42 | vie | vi |
+Vietnamese | Tiếng Việt | Vietnam | vi-VN | 1066 | vie | vi |
+Volapük | Volapük | null | vo | 4096 | vol | vo |
+Volapük | Volapük | World | vo-001 | 4096 | vol | vo |
+Vunjo | null | null | vun | 4096 | null | null |
+Vunjo | null | Tanzania | vun-TZ | 4096 | null | null |
+Walser | null | null | wae | 4096 | null | null |
+Walser | null | Switzerland | wae-CH | 4096 | null | null |
+Welsh | null | null | cy | 82 | wel/cym | cy |
+Welsh | null | United Kingdom | cy-GB | 1106 | wel/cym | cy |
+Wolaytta | null | null | wal | 4096 | wal | null |
+Wolaytta | null | Ethiopia | wal-ET | 4096 | wal | null |
+Wolof | Wolof | null | wo | 136 | wol | wo |
+Wolof | Wolof | Senegal | wo-SN | 1160 | wol | wo |
+Xhosa | isiXhosa | null | xh | 52 | xho | xh |
+Xhosa | isiXhosa | South Africa | xh-ZA | 1076 | xho | xh |
+Yangben | null | null | yav | 4096 | null | null |
+Yangben | null | Cameroon | yav-CM | 4096 | null | null |
+Yi | null | null | ii | 120 | null | null |
+Yi | null | People's Republic of China | ii-CN | 1144 | null | null |
+Yoruba | Yorùbá | null | yo | 106 | yor | yo |
+Yoruba | Yorùbá | Benin | yo-BJ | 4096 | yor | yo |
+Yoruba | Yorùbá | Nigeria | yo-NG | 1130 | yor | yo |
+Zarma | null | null | dje | 4096 | null | null |
+Zarma | null | Niger | dje-NE | 4096 | null | null |
+Zulu | isiZulu | null | zu | 53 | zul | zu |
+Zulu | isiZulu | South Africa | zu-ZA | 1077 | zul | zu |
 
 ## Tests
 

@@ -12,6 +12,9 @@ assert.equal(locale.getByTag('tzm-latn').tag, 'tzm-Latn')
 assert.equal(locale.getByTag('ccp-cakm').tag, 'ccp-Cakm')
 assert.equal(locale.getByTag('ca-es').tag, 'ca-ES')
 assert.equal(locale.all.some(item => item.tag.endsWith('-')), false)
+assert.equal(locale.all.every(item => typeof item.tag === 'string' && item.tag !== ''), true)
+assert.equal(locale.all.every(item => typeof item.lcid === 'number'), true)
+assert.equal(locale.all.every(item => typeof item.name === 'string'), true)
 
 // Issue #25 / #10 - where() must never throw on null/undefined fields
 assert.doesNotThrow(() => locale.where('local', 'Español'))
