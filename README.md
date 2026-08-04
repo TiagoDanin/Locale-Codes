@@ -18,25 +18,42 @@ npm install locale-codes --save
 ### JavaScript
 
 ```js
-const locale = require('locale-codes')
+import locale from 'locale-codes'
+// Or import only what you need
+import {all, getByTag, getAllByISO6391} from 'locale-codes'
 
 locale.all // [language: '...']
 locale.getByTag('pt-br').name // 'Portuguese'
 locale.where('tag', 'pt-br').name // 'Portuguese'
+
+getByTag('pt-br').name // 'Portuguese'
+getAllByISO6391('en') // every English variant
 ```
+
+> **CommonJS is still supported.** `const locale = require('locale-codes')`
+> keeps working and returns the same object - both entry points share the same
+> data, so `require` and `import` never disagree.
 
 ### TypeScript
 
 ```ts
-import * as locale from 'locale-codes'
-import {ILocale} from '.'
+import locale, {ILocale} from 'locale-codes'
+// Types can also be imported on their own
+import type {ILocale, LocaleCodes} from 'locale-codes'
 
 locale.all // [language: '...']
 const localeSelect: ILocale = locale.all[0]
 
-locale.getByTag('pt-br').name // 'Portuguese'
-locale.where('tag', 'pt-br').name // 'Portuguese'
+locale.getByTag('pt-br')?.name // 'Portuguese'
+locale.where('tag', 'pt-br')?.name // 'Portuguese'
+
+// Every match instead of only the first one
+const english: ILocale[] = locale.getAllByISO6391('en')
+const portuguese: ILocale[] = locale.whereAll('name', 'Portuguese')
 ```
+
+`ILocale` and `LocaleCodes` are exported by the package itself, so there is no
+need to reach into an internal path to type your code.
 
 ## Documentation
 
@@ -203,13 +220,13 @@ Catalan | Català | Spain | ca-ES | 1027 | cat | ca |
 Cebuano | null | null | ceb | 4096 | ceb | null |
 Cebuan (Latin) | null | null | ceb-Latn | 4096 | null | null |
 Cebuan (Latin) | null | Philippines | ceb-Latn-PH | 4096 | null | null |
-Central Atlas Tamazight (Latin) | null | Morocco | tzm-Latn | 4096 | null | null |
+Central Atlas Tamazight (Latin) | null | Morocco | tzm-Latn- | 4096 | null | null |
 Central Kurdish | null | null | ku | 146 | null | null |
 Central Kurdish | null | null | ku-Arab | 31890 | null | null |
 Central Kurdish | null | Iraq | ku-Arab-IQ | 1170 | null | null |
 Chakma | null | null | ccp | 4096 | null | null |
 Chakma | null | Chakma | ccp-Cakm | 4096 | null | null |
-Chakma | null | India | ccp-Cakm | 4096 | null | null |
+Chakma | null | India | ccp-Cakm- | 4096 | null | null |
 Chechen | Нохчийн | Russia | cd-RU | 4096 | che | ce |
 Cherokee | null | null | chr | 92 | chr | null |
 Cherokee | null | null | chr-Cher | 31836 | chr | null |
@@ -898,7 +915,7 @@ Vai | null | null | vai-Vaii | 4096 | vai | null |
 Vai | null | Liberia | vai-Vaii-LR | 4096 | vai | null |
 Vai (Latin) | null | Liberia | vai-Latn-LR | 4096 | null | null |
 Vai (Latin) | null | null | vai-Latn | 4096 | null | null |
-Valencian | Català | Spain | ca-ES | 2051 | cat | ca |
+Valencian | Català | Spain | ca-ES- | 2051 | cat | ca |
 Venda | Tshivenḓa | null | ve | 51 | ven | ve |
 Venda | Tshivenḓa | South Africa | ve-ZA | 1075 | ven | ve |
 Vietnamese | Tiếng Việt | null | vi | 42 | vie | vi |

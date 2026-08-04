@@ -7,14 +7,16 @@ export interface ILocale {
 	/**
 	 * The name of the language/locale as recognised by those who use it
 	 * e.g. Arabic becomes: العربية
+	 * `null` when the localised name is unknown
 	 */
-	local?: string;
+	local?: string | null;
 
 	/**
 	 * A textual name of the geographic location in which this
 	 * locale/language is generally utilised
+	 * `null` when the locale is not tied to a location
 	 */
-	location?: string;
+	location?: string | null;
 
 	/**
 	 * Tag for the locale - e.g. English (UK) becomes: en-GB
@@ -33,14 +35,16 @@ export interface ILocale {
 	 * NOTE: Where differing codes appear in ISO 639-2/B and ISO 639-2/T,
 	 * both are provided separated by a slash (B/T)
 	 * e.g. Basque becomes: baq/eus
+	 * `null` when the locale has no ISO 639-2 code
 	 */
-	'iso639-2'?: string;
+	'iso639-2'?: string | null;
 
 	/**
 	 * Two-letter ISO 639-1 code for the given locale
 	 * e.g. English becomes: en
+	 * `null` when the locale has no ISO 639-1 code
 	 */
-	'iso639-1'?: string;
+	'iso639-1'?: string | null;
 }
 
 export interface LocaleCodes {
@@ -91,9 +95,9 @@ export interface LocaleCodes {
 
 	/**
 	 * Searches for a locale according to its Window LCID decimal code
-	 * @param id LCID decimal code - e.g. 2057
+	 * @param id LCID decimal code - e.g. 2057 or "2057"
 	 */
-	getByLCID: (id: number) => ILocale | undefined;
+	getByLCID: (id: number | string) => ILocale | undefined;
 
 	/**
 	 * Searches for a locale according to its three-character ISO 639-2 code
@@ -137,10 +141,10 @@ export interface LocaleCodes {
 
 	/**
 	 * Searches for every locale matching the Windows LCID decimal code given
-	 * @param id LCID decimal code - e.g. 2057
+	 * @param id LCID decimal code - e.g. 2057 or "2057"
 	 * @returns All matching locales, or an empty array when there is no match
 	 */
-	getAllByLCID: (id: number) => ILocale[];
+	getAllByLCID: (id: number | string) => ILocale[];
 
 	/**
 	 * Searches for every locale matching the three-character ISO 639-2 code given

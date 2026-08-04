@@ -6,15 +6,56 @@ assert.equal(locale.getByTag('pt-br').name, 'Portuguese')
 assert.equal(locale.getByTag('pt-br').local, 'Português')
 assert.equal(locale.getByTag('js-best'), undefined)
 
-// Issue #28 - tags must not keep the trailing "-" shipped by windows-locale
-assert.equal(locale.getByTag('tzm-latn') !== undefined, true)
+// Issue #28 - tags shipped with a trailing "-" are normalized, but never in a
+// way that makes an existing locale resolve to a different one.
+// The truncated tags are not "missing one character": the real values are
+// tzm-Latn-MA, ccp-Cakm-BD/ccp-Cakm-IN and ca-ES-valencia, so tzm-Latn and
+// ca-ES belong to other locales and must keep pointing at them.
 assert.equal(locale.getByTag('tzm-latn').tag, 'tzm-Latn')
-assert.equal(locale.getByTag('ccp-cakm').tag, 'ccp-Cakm')
+assert.equal(locale.getByTag('tzm-latn').name, 'Tamazight (Latin)')
 assert.equal(locale.getByTag('ca-es').tag, 'ca-ES')
-assert.equal(locale.all.some(item => item.tag.endsWith('-')), false)
+assert.equal(locale.getByTag('ca-es').name, 'Catalan')
+assert.equal(locale.getByTag('ca-es').lcid, 1027)
+
+// Every locale must be reachable by its own tag - normalization never merges
+// two distinct entries into one.
+assert.equal(
+	locale.all.every(item => {
+		const found = locale.getByTag(item.tag)
+		return found !== undefined && found.tag.toLowerCase() === item.tag.toLowerCase()
+	}),
+	true
+)
+
+// A tag may only keep a trailing "-" when stripping it would collide with a
+// different locale. Anything else is an unnormalized value.
+assert.equal(
+	locale.all
+		.filter(item => item.tag.endsWith('-'))
+		.every(item => locale.getByTag(item.tag.replace(/-+$/, '')) !== undefined),
+	true
+)
+
 assert.equal(locale.all.every(item => typeof item.tag === 'string' && item.tag !== ''), true)
 assert.equal(locale.all.every(item => typeof item.lcid === 'number'), true)
 assert.equal(locale.all.every(item => typeof item.name === 'string'), true)
+
+// Absent fields are null - not undefined - so the serialized shape documented
+// in the README is preserved
+const aghem = locale.getByTag('agq')
+assert.equal(aghem.local, null)
+assert.equal(aghem.location, null)
+assert.equal(aghem['iso639-2'], null)
+assert.equal(aghem['iso639-1'], null)
+assert.equal(
+	JSON.stringify(aghem),
+	'{"name":"Aghem","local":null,"location":null,"tag":"agq","lcid":4096,"iso639-2":null,"iso639-1":null}'
+)
+
+// LCID lookups accept a numeric string but never a partially numeric one
+assert.equal(locale.getByLCID('1046').tag, 'pt-BR')
+assert.equal(locale.where('lcid', '1046abc'), undefined)
+assert.equal(locale.where('lcid', ''), undefined)
 
 // Issue #25 / #10 - where() must never throw on null/undefined fields
 assert.doesNotThrow(() => locale.where('local', 'Español'))
