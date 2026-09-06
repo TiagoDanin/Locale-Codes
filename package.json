@@ -20,7 +20,7 @@
 		"./package.json": "./package.json"
 	},
 	"preferGlobal": false,
-	"version": "1.4.0",
+	"version": "2.0.0",
 	"description": " Language codes & country codes",
 	"author": {
 		"name": "Tiago Danin",
@@ -51,7 +51,8 @@
 		"windows"
 	],
 	"scripts": {
-		"build": "tsc && node script/build-esm.js",
+		"clean": "node -e \"require('fs').rmSync('dist', {recursive: true, force: true})\"",
+		"build": "npm run clean && tsc && node script/build-esm.js",
 		"dev": "tsc --watch",
 		"start": "node dist/index.js",
 		"test": "npm run build && node tests/test.js && node tests/esm.test.mjs",
@@ -59,7 +60,7 @@
 		"prepublishOnly": "npm run build"
 	},
 	"engines": {
-		"node": ">=v14.17.4"
+		"node": ">=18"
 	},
 	"private": false,
 	"repository": {
@@ -82,9 +83,9 @@
 		"!dist/index.test-d.ts"
 	],
 	"dependencies": {
-		"iso639-codes": "^1.0.1",
+		"iso639-codes": "^2.0.0",
 		"langs": "^2.0.0",
-		"windows-locale": "^1.1.0"
+		"windows-locale": "^2.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "^16.18.0",

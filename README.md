@@ -197,6 +197,9 @@ Bemba | null | null | bem | 4096 | bem | null |
 Bemba | null | Zambia | bem-ZM | 4096 | bem | null |
 Bena | null | null | bez | 4096 | null | null |
 Bena | null | Tanzania | bez-TZ | 4096 | null | null |
+Bhojpuri | null | null | bho | 4096 | bho | null |
+Bhojpuri (Devanagari) | null | null | bho-Deva | 4096 | null | null |
+Bhojpuri (Devanagari) | null | India | bho-Deva-IN | 4096 | null | null |
 Blin | null | null | byn | 4096 | byn | null |
 Blin | null | Eritrea | byn-ER | 4096 | byn | null |
 Bodo | null | null | brx | 4096 | null | null |
@@ -220,14 +223,16 @@ Catalan | Català | Spain | ca-ES | 1027 | cat | ca |
 Cebuano | null | null | ceb | 4096 | ceb | null |
 Cebuan (Latin) | null | null | ceb-Latn | 4096 | null | null |
 Cebuan (Latin) | null | Philippines | ceb-Latn-PH | 4096 | null | null |
-Central Atlas Tamazight (Latin) | null | Morocco | tzm-Latn- | 4096 | null | null |
+Central Atlas Tamazight (Arabic) | null | Morocco | tzm-Arab-MA | 1119 | null | null |
+Central Atlas Tamazight (Latin) | null | Morocco | tzm-Latn-MA | 4096 | null | null |
 Central Kurdish | null | null | ku | 146 | null | null |
 Central Kurdish | null | null | ku-Arab | 31890 | null | null |
 Central Kurdish | null | Iraq | ku-Arab-IQ | 1170 | null | null |
 Chakma | null | null | ccp | 4096 | null | null |
 Chakma | null | Chakma | ccp-Cakm | 4096 | null | null |
-Chakma | null | India | ccp-Cakm- | 4096 | null | null |
-Chechen | Нохчийн | Russia | cd-RU | 4096 | che | ce |
+Chakma | null | Bangladesh | ccp-Cakm-BD | 4096 | null | null |
+Chakma | null | India | ccp-Cakm-IN | 4096 | null | null |
+Chechen | Нохчийн | Russia | ce-RU | 4096 | che | ce |
 Cherokee | null | null | chr | 92 | chr | null |
 Cherokee | null | null | chr-Cher | 31836 | chr | null |
 Cherokee | null | United States | chr-Cher-US | 1116 | chr | null |
@@ -242,13 +247,16 @@ Chinese (Traditional) | null | Hong Kong S.A.R. | zh-HK | 3076 | null | null |
 Chinese (Traditional) | null | Macao S.A.R. | zh-MO | 5124 | null | null |
 Chinese (Traditional) | null | Taiwan | zh-TW | 1028 | null | null |
 Church Slavic | Словѣ́ньскъ | Russia | cu-RU | 4096 | chu | cu |
+Chuvash | Чӑвашла | null | cv | 4096 | chv | cv |
+Chuvash (Cyrillic) | null | null | cv-Cyrl | 4096 | null | null |
+Chuvash (Cyrillic) | null | Russia | cv-Cyrl-RU | 4096 | null | null |
 Congo Swahili | null | null | swc | 4096 | null | null |
 Congo Swahili | null | Congo DRC | swc-CD | 4096 | null | null |
 Cornish | Kernewek | null | kw | 4096 | cor | kw |
 Cornish | Kernewek | United Kingdom | kw-GB | 4096 | cor | kw |
 Corsican | Corsu | null | co | 131 | cos | co |
 Corsican | Corsu | France | co-FR | 1155 | cos | co |
-Croatian | Hrvatski | null | hr, | 26 | hrv | hr |
+Croatian | Hrvatski | null | hr | 26 | hrv | hr |
 Croatian | Hrvatski | Croatia | hr-HR | 1050 | hrv | hr |
 Croatian (Latin) | null | Bosnia and Herzegovina | hr-BA | 4122 | null | null |
 Czech | null | null | cs | 5 | cze/ces | cs |
@@ -327,6 +335,7 @@ English | English | Macao SAR | en-MO | 4096 | eng | en |
 English | English | Madagascar | en-MG | 4096 | eng | en |
 English | English | Malawi | en-MW | 4096 | eng | en |
 English | English | Malaysia | en-MY | 17417 | eng | en |
+English | English | Maldives | en-MV | 4096 | eng | en |
 English | English | Malta | en-MT | 4096 | eng | en |
 English | English | Marshall Islands | en-MH | 4096 | eng | en |
 English | English | Mauritius | en-MU | 4096 | eng | en |
@@ -359,7 +368,7 @@ English | English | Slovenia | en-SI | 4096 | eng | en |
 English | English | Solomon Islands | en-SB | 4096 | eng | en |
 English | English | South Africa | en-ZA | 7177 | eng | en |
 English | English | South Sudan | en-SS | 4096 | eng | en |
-English | English | St Helena, Ascension,  Tristan da Cunha | en-SH | 4096 | eng | en |
+English | English | St Helena, Ascension, Tristan da Cunha | en-SH | 4096 | eng | en |
 English | English | Sudan | en-SD | 4096 | eng | en |
 English | English | Swaziland | en-SZ | 4096 | eng | en |
 English | English | Sweden | en-SE | 4096 | eng | en |
@@ -404,6 +413,7 @@ French | null | Burkina Faso | fr-BF | 4096 | fre/fra | fr |
 French | null | Burundi | fr-BI | 4096 | fre/fra | fr |
 French | null | Cameroon | fr-CM | 11276 | fre/fra | fr |
 French | null | Canada | fr-CA | 3084 | fre/fra | fr |
+French | null | Caribbean | fr-029 | 7180 | fre/fra | fr |
 French | null | Central African Republic | fr-CF | 4096 | fre/fra | fr |
 French | null | Chad | fr-TD | 4096 | fre/fra | fr |
 French | null | Comoros | fr-KM | 4096 | fre/fra | fr |
@@ -461,8 +471,8 @@ Fulah (Latin) | null | Liberia | ff-Latn-LR | 4096 | null | null |
 Fulah | Fulfulde | Mauritania | ff-MR | 4096 | ful | ff |
 Fulah (Latin) | null | Mauritania | ff-Latn-MR | 4096 | null | null |
 Fulah (Latin) | null | Niger | ff-Latn-NE | 4096 | null | null |
-Fulah | Fulfulde | Nigeria | ff-NG | 4096 | ful | ff |
-Fulah (Latin) | null | Nigeria | ff-Latn-NG | 4096 | null | null |
+Fulah | Fulfulde | Nigeria | ff-NG | 1127 | ful | ff |
+Fulah (Latin) | null | Nigeria | ff-Latn-NG | 1127 | null | null |
 Fulah | Fulfulde | Senegal | ff-Latn-SN | 2151 | ful | ff |
 Fulah (Latin) | null | Sierra Leone | ff-Latn-SL | 4096 | null | null |
 Galician | Galego | null | gl | 86 | glg | gl |
@@ -490,6 +500,9 @@ Gujarati | ગુજરાતી | null | gu | 71 | guj | gu |
 Gujarati | ગુજરાતી | India | gu-IN | 1095 | guj | gu |
 Gusii | null | null | guz | 4096 | null | null |
 Gusii | null | Kenya | guz-KE | 4096 | null | null |
+Haryanvi | null | null | bgc | 4096 | null | null |
+Haryanvi (Devanagari) | null | null | bgc-Deva | 4096 | null | null |
+Haryanvi (Devanagari) | null | India | bgc-Deva-IN | 4096 | null | null |
 Hausa (Latin) | null | null | ha | 104 | null | null |
 Hausa (Latin) | null | null | ha-Latn | 31848 | null | null |
 Hausa (Latin) | null | Ghana | ha-Latn-GH | 4096 | null | null |
@@ -501,6 +514,8 @@ Hebrew | עברית | null | he | 13 | heb | he |
 Hebrew | עברית | Israel | he-IL | 1037 | heb | he |
 Hindi | हिन्दी | null | hi | 57 | hin | hi |
 Hindi | हिन्दी | India | hi-IN | 1081 | hin | hi |
+Hindi (Latin) | null | null | hi-Latn | 4096 | null | null |
+Hindi (Latin) | null | India | hi-Latn-IN | 4096 | null | null |
 Hungarian | Magyar | null | hu | 14 | hun | hu |
 Hungarian | Magyar | Hungary | hu-HU | 1038 | hun | hu |
 Icelandic | null | null | is | 15 | ice/isl | is |
@@ -535,6 +550,9 @@ Kabuverdianu | null | null | kea | 4096 | null | null |
 Kabuverdianu | null | Cabo Verde | kea-CV | 4096 | null | null |
 Kabyle | null | null | kab | 4096 | kab | null |
 Kabyle | null | Algeria | kab-DZ | 4096 | kab | null |
+Kaingang | null | null | kgp | 4096 | null | null |
+Kaingang (Latin) | null | null | kgp-Latn | 4096 | null | null |
+Kaingang (Latin) | null | Brazil | kgp-Latn-BR | 4096 | null | null |
 Kako | null | null | kkj | 4096 | null | null |
 Kako | null | Cameroon | kkj-CM | 4096 | null | null |
 Kalenjin | null | null | kln | 4096 | null | null |
@@ -543,9 +561,11 @@ Kamba | null | null | kam | 4096 | kam | null |
 Kamba | null | Kenya | kam-KE | 4096 | kam | null |
 Kannada | ಕನ್ನಡ | null | kn | 75 | kan | kn |
 Kannada | ಕನ್ನಡ | India | kn-IN | 1099 | kan | kn |
+Kanuri (Latin) | null | Nigeria | kr-Latn-NG | 1137 | null | null |
 Kashmiri | كشميري | null | ks | 96 | kas | ks |
 Kashmiri | كشميري | Perso-Arabic | ks-Arab | 1120 | kas | ks |
 Kashmiri | كشميري | Perso-Arabic | ks-Arab-IN | 4096 | kas | ks |
+Kashmiri (Devanagari) | null | India | ks-Deva-IN | 2144 | null | null |
 Kazakh | Қазақша | null | kk | 63 | kaz | kk |
 Kazakh | Қазақша | Kazakhstan | kk-KZ | 1087 | kaz | kk |
 Khmer | null | null | km | 83 | null | null |
@@ -580,6 +600,7 @@ Langi | null | null | lag | 4096 | null | null |
 Langi | null | Tanzania | lag-TZ | 4096 | null | null |
 Lao | ພາສາລາວ | null | lo | 84 | lao | lo |
 Lao | ພາສາລາວ | Lao P.D.R. | lo-LA | 1108 | lao | lo |
+Latin | Latina | Vatican City | la-VA | 1142 | lat | la |
 Latvian | Latviešu | null | lv | 38 | lav | lv |
 Latvian | Latviešu | Latvia | lv-LV | 1062 | lav | lv |
 Lingala | Lingála | null | ln | 4096 | lin | ln |
@@ -658,6 +679,11 @@ Ngiemboon | null | null | nnh | 4096 | null | null |
 Ngiemboon | null | Cameroon | nnh-CM | 4096 | null | null |
 Ngomba | null | null | jgo | 4096 | null | null |
 Ngomba | null | Cameroon | jgo-CM | 4096 | null | null |
+Nheengatu | null | null | yrl | 4096 | null | null |
+Nheengatu (Latin) | null | null | yrl-Latn | 4096 | null | null |
+Nheengatu (Latin) | null | Brazil | yrl-Latn-BR | 4096 | null | null |
+Nheengatu (Latin) | null | Colombia | yrl-Latn-CO | 4096 | null | null |
+Nheengatu (Latin) | null | Venezuela | yrl-Latn-VE | 4096 | null | null |
 Northern Luri | null | Iraq | lrc-IQ | 4096 | null | null |
 Northern Luri | null | Iran | lrc-IR | 4096 | null | null |
 North Ndebele | isiNdebele | null | nd | 4096 | nde | nd |
@@ -675,6 +701,7 @@ Nyankole | null | null | nyn | 4096 | nyn | null |
 Nyankole | null | Uganda | nyn-UG | 4096 | nyn | null |
 Occitan | null | null | oc | 130 | null | null |
 Occitan | null | France | oc-FR | 1154 | null | null |
+Occitan | null | Spain | oc-ES | 4096 | null | null |
 Odia | null | null | or | 72 | null | null |
 Odia | null | India | or-IN | 1096 | null | null |
 Oromo | Afaan Oromoo | null | om | 114 | orm | om |
@@ -716,6 +743,9 @@ Quechua | Runa Simi | null | quz | 107 | que | qu |
 Quechua | Runa Simi | Bolivia | quz-BO | 1131 | que | qu |
 Quechua | Runa Simi | Ecuador | quz-EC | 2155 | que | qu |
 Quechua | Runa Simi | Peru | quz-PE | 3179 | que | qu |
+Rajasthani | null | null | raj | 4096 | raj | null |
+Rajasthani (Devanagari) | null | null | raj-Deva | 4096 | null | null |
+Rajasthani (Devanagari) | null | India | raj-Deva-IN | 4096 | null | null |
 Ripuarian | null | null | ksh | 4096 | null | null |
 Ripuarian | null | Germany | ksh-DE | 4096 | null | null |
 Romanian | null | null | ro | 24 | rum/ron | ro |
@@ -762,6 +792,9 @@ Sangu | null | null | sbp | 4096 | null | null |
 Sangu | null | Tanzania | sbp-TZ | 4096 | null | null |
 Sanskrit | संस्कृतम् | null | sa | 79 | san | sa |
 Sanskrit | संस्कृतम् | India | sa-IN | 1103 | san | sa |
+Sardinian | Sardu | null | sc | 4096 | srd | sc |
+Sardinian (Latin) | null | null | sc-Latn | 4096 | null | null |
+Sardinian (Latin) | null | Italy | sc-Latn-IT | 4096 | null | null |
 Scottish Gaelic | Gàidhlig | null | gd | 145 | gla | gd |
 Scottish Gaelic | Gàidhlig | United Kingdom | gd-GB | 1169 | gla | gd |
 Sena | null | null | seh | 4096 | null | null |
@@ -834,7 +867,7 @@ Spanish | Español | Philippines | es-PH | 4096 | spa | es |
 Spanish | Español | Puerto Rico | es-PR | 20490 | spa | es |
 Spanish | Español | Spain | es-ES_tradnl | 1034 | spa | es |
 Spanish | Español | Spain | es-ES | 3082 | spa | es |
-Spanish | Español | UnitedStates | es-US | 21514 | spa | es |
+Spanish | Español | United States | es-US | 21514 | spa | es |
 Spanish | Español | Uruguay | es-UY | 14346 | spa | es |
 Standard Moroccan Tamazight | null | null | zgh | 4096 | zgh | null |
 Standard Moroccan Tamazight | null | Morocco | zgh-Tfng-MA | 4096 | zgh | null |
@@ -915,7 +948,7 @@ Vai | null | null | vai-Vaii | 4096 | vai | null |
 Vai | null | Liberia | vai-Vaii-LR | 4096 | vai | null |
 Vai (Latin) | null | Liberia | vai-Latn-LR | 4096 | null | null |
 Vai (Latin) | null | null | vai-Latn | 4096 | null | null |
-Valencian | Català | Spain | ca-ES- | 2051 | cat | ca |
+Valencian | Català | Spain | ca-ES-valencia | 2051 | cat | ca |
 Venda | Tshivenḓa | null | ve | 51 | ven | ve |
 Venda | Tshivenḓa | South Africa | ve-ZA | 1075 | ven | ve |
 Vietnamese | Tiếng Việt | null | vi | 42 | vie | vi |
@@ -938,6 +971,7 @@ Yangben | null | null | yav | 4096 | null | null |
 Yangben | null | Cameroon | yav-CM | 4096 | null | null |
 Yi | null | null | ii | 120 | null | null |
 Yi | null | People's Republic of China | ii-CN | 1144 | null | null |
+Yiddish | ייִדיש | World | yi-001 | 1085 | yid | yi |
 Yoruba | Yorùbá | null | yo | 106 | yor | yo |
 Yoruba | Yorùbá | Benin | yo-BJ | 4096 | yor | yo |
 Yoruba | Yorùbá | Nigeria | yo-NG | 1130 | yor | yo |
